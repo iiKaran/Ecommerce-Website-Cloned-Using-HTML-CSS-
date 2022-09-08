@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homepage/Ecommerce/Responsive/Web</title>
+  <!-- Linking the Local Css File For Styling The Website Mannualy  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header id="product-nav">
+    <nav>
+      <div class="logo">
+       <a href="index.html">
+
+        <img src="images/logo.png" alt="" />
+       </a>
+      </div>
+      <i class="fa fa-bars" id="menu-btn" onclick="showMenu()"></i>
+      <div class="right-nav" id="navlinklist">
+        <ul>
+          <i class="fa fa-times" id="menu-btn" onclick="HideMenu()"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">More Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="account.html">Account</a></li>
+          <li><a href="Product-detail.html">Products Details</a></li>
+        </ul>
+        <div class="cart-icon">
+          <a href="cart.html"><img src="images/cart.png" alt="" /></a></div>
+        </div>
+    </nav>
+  </header>
+  <div class="container product-cont">
+    <div class="row head-product-row">
+      <div class="tittle-col">
+        <h1>All Product's</h1>
+      </div>
+      <div class="select-col">
+        <select name="selection" id="option">
+          <option value="j">Sort by Price</option>
+          <option value="j">Sort by Quality</option>
+          <option value="j">Sort by Gender</option>
+          <option value="j">Sort by Company</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Featured products</h2>
+    <div class="row product-row-2 product-img">
+      <div class="col-1 product-col">
+        <img src="images/category-1.jpg" alt="" />
+        <div class="stars product-star" id="star-recom">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="col-1 product-col">
+        <img src="images/category-2.jpg" alt="" />
+        <div class="stars product-star" id="star-recom">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="col-1 product-col">
+        <img src="images/category-3.jpg" alt="" />
+        <div class="stars product-star" id="star-recom">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Favourite Product's :</h2>
+    <div class="row product-row-1">
+      <div class="col-1 product-col">
+        <img src="images/buy-1.jpg" alt="" />
+        <h4><a href="#">Red-T-Shirt</a></h4>
+        <div class="stars product-star">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="price">$12.99</div>
+      </div>
+      <div class="col-1 product-col">
+        <img src="images/buy-2.jpg" alt="" />
+        <h4><a href="#">Black-Casual-Shoes</a></h4>
+        <div class="stars product-star">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-half" aria-hidden="true"></i>
+        </div>
+        <div class="price">$12.99</div>
+      </div>
+      <div class="col-1 product-col">
+        <img src="images/buy-3.jpg" alt="" />
+        <h4><a href="#">Men-Trouser</a></h4>
+        <div class="stars product-star">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <div class="price">$13.3</div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2>Recommended Product's :</h2>
+    <div class="row">
+      <div class="col-2 product-col">
+        <img src="images/product-10.jpg" alt="" />
+        <h4><a href="#">Men-Trouser</a></h4>
+        <div class="stars product-star" id="star-recom">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <div class="price">$13.3</div>
+      </div>
+      <div class="col-2 product-col">
+        <img src="images/product-11.jpg" alt="" />
+        <h4><a href="#">Men-Trouser</a></h4>
+        <div class="stars product-star" id="star-recom">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <div class="price">$13.3</div>
+      </div>
+      <div class="col-2 product-col">
+        <img src="images/product-12.jpg" alt="" />
+        <h4><a href="#">Men-Trouser</a></h4>
+        <div class="stars product-star" id="star-recom">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <div class="price">$13.3</div>
+      </div>
+      <div class="col-2 product-col">
+        <img src="images/product-8.jpg" alt="" />
+        <h4><a href="#">Men-Trouser</a></h4>
+        <div class="stars product-star" id="star-recom">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <div class="price">$13.3</div>
+      </div>
+      <div class="col-2 product-col">
+        <img src="images/product-7.jpg" alt="" />
+        <h4><a href="#">Men-Trouser</a></h4>
+        <div class="stars product-star" id="star-recom">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <div class="price">$13.3</div>
+      </div>
+
+      <div class="col-2 product-col">
+        <img src="images/product-6.jpg" alt="" />
+        <h4><a href="#">Men-Trouser</a></h4>
+        <div class="stars product-star" id="star-recom">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <div class="price">$13.3</div>
+      </div>
+      <div class="col-2 product-col">
+        <img src="images/product-5.jpg" alt="" />
+        <h4><a href="#">Men-Trouser</a></h4>
+        <div class="stars product-star" id="star-recom">
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star" aria-hidden="true"></i>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        </div>
+        <div class="price">$13.3</div>
+      </div>
+    </div>
+  </div>
+  <!-- Creating the footer Section   -->
+  <section class="footer">
+
+    <div class="container" id="foot-cont">
+      <div class="row">
+        <div class="foot-col" id="inst">
+          <div class="foot-tit">
+            Download our app
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis.</p>
+          <img src="images/app-store.png" alt="">
+          <img src="images/play-store.png" alt="">
+        </div>
+        <div class="foot-col">
+          <img src="images/logo.png" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur.</p>
+        </div>
+        <div class="foot-col">
+          <div class="foot-tit">
+            useful links
+          </div>
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">History</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <div class="foot-tit">
+            Follow us
+          </div>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">You tube</a></li>
+            <li><a href="#">Linked In</a></li>
+            <li><a href="#">Twiteer</a></li>
+          </ul>
+        </div>
+        <hr>
+        <h5 class="cpy">Copyright @ Karan Kumar All Right Reserved</h5>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <script>
+    let l = document.getElementById("navlinklist");
+    function showMenu() {
+      l.style.left = "0%";
+    }
+    function HideMenu() {
+      l.style.left = "200%";
+    }
+  </script>
+</body>
+
+</html>

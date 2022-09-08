@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homepage/Ecommerce/Responsive/Web</title>
+  <!-- Linking the Local Css File For Styling The Website Mannualy  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header id="product-nav">
+    <nav>
+      <div class="logo">
+       <a href="index.html">
+
+        <img src="images/logo.png" alt="" />
+       </a>
+      </div>
+      <i class="fa fa-bars" id="menu-btn" onclick="showMenu()"></i>
+      <div class="right-nav" id="navlinklist">
+        <ul>
+          <i class="fa fa-times" id="menu-btn" onclick="HideMenu()"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">More Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="account.html">Account</a></li>
+          <li><a href="Product-detail.html">Products Details</a></li>
+        </ul>
+        <div class="cart-icon">
+          <a href="cart.html"><img src="images/cart.png" alt="" /></a></div>
+        </div>
+    </nav>
+  </header>
+  <section class="location">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109692.2683056104!2d76.57536760358913!3d30.777852260874006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ffb140bd63e07%3A0x68591e334d17a988!2sChandigarh%20University!5e0!3m2!1sen!2sin!4v1660817963489!5m2!1sen!2sin" width="700" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <div class="row">
+   <div class="contact-info">
+    <div class="address item-of-contact">
+     <i class="fa fa-address-book icon-contact" aria-hidden="true">
+     </i>
+     <div>
+      <h5>
+       Eg 845 Mohalla Gobind Garh 
+      </h5>
+      Jalandhar, punjab India
+     </div>
+    </div>
+    <div class="numbers item-of-contact ">
+     <i class="fa fa-phone icon-contact" aria-hidden="true"></i>
+     <div>
+      <h5>
+       +91-8544888378
+      </h5>
+      Indian Mobile Number 
+     </div>
+    </div>
+    <div class="mymail item-of-contact">
+     <i class="fa fa-envelope icon-contact" aria-hidden="true"></i>
+     <div>
+      <h5>
+      karankumar560k@gmail.com
+      </h5>
+      Email Your Query 
+     </div>
+    </div>
+  </div>
+     <div class="send-mail">
+      <form action="php">
+       <h3>
+        Leave A FeedBack
+       </h4>
+       <input class="blog-in" type="text" name="Name" id="name" placeholder="Enter Your Name :">
+       <input type="text"  class="blog-in" name="Name" id="Gmail" placeholder="Enter Your Gmail :">
+       <textarea name="comment" id="coment" rows="2" class="blog-in" placeholder="Subject :"></textarea>
+       <textarea name="comment" id="coment" rows="2" class="blog-in" placeholder="Enter Your Enquiry"></textarea>
+       <div class= "btn form-btn">Submit</div>
+      </form>
+     </div>
+  </div>
+  <!-- Creating the footer Section   -->
+  <section class="footer">
+
+    <div class="container" id="foot-cont">
+      <div class="row">
+        <div class="foot-col" id="inst">
+          <div class="foot-tit">
+            Download our app
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis.</p>
+          <img src="images/app-store.png" alt="">
+          <img src="images/play-store.png" alt="">
+        </div>
+        <div class="foot-col">
+          <img src="images/logo.png" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur.</p>
+        </div>
+        <div class="foot-col">
+          <div class="foot-tit">
+            useful links
+          </div>
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">History</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <div class="foot-tit">
+            Follow us
+          </div>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">You tube</a></li>
+            <li><a href="#">Linked In</a></li>
+            <li><a href="#">Twiteer</a></li>
+          </ul>
+        </div>
+        <hr>
+        <h5 class="cpy">Copyright @ Karan Kumar All Right Reserved</h5>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <script>
+    let l = document.getElementById("navlinklist");
+    function showMenu() {
+      l.style.left = "0%";
+    }
+    function HideMenu() {
+      l.style.left = "200%";
+    }
+  </script>
+</body>
+
+</html>
